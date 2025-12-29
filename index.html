@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>J&S Estudio Jurídico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <img src="logo.png" alt="Logo J&S" />
+        <div class="brandText">
+          <div class="t1">J&S</div>
+          <div class="t2">Estudio Jurídico</div>
+        </div>
+      </a>
+
+      <nav class="menu" aria-label="Navegación">
+        <a class="pill" href="#inicio">Inicio</a>
+        <a class="pill" href="#servicios">Servicios</a>
+        <a class="pill" href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn btn-gold" href="#contacto">Agenda una consulta</a>
+    </div>
+
+    <!-- Barra de progreso (interacción al hacer scroll) -->
+    <div class="scrollbar" aria-hidden="true">
+      <div class="scrollbarFill" id="scrollFill"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="heroLeft reveal">
+        <div class="kicker"><span class="dot"></span> ESTUDIO JURÍDICO</div>
+
+        <h1>¿Buscas soluciones legales efectivas para tus problemas?</h1>
+        <p class="lead">
+          Contáctanos y recibe orientación para tu caso. Atención por WhatsApp y llamada.
+        </p>
+
+        <div class="selectWrap">
+          <span class="chip">Elige número:</span>
+          <select id="numeroSelect" aria-label="Seleccionar número de contacto">
+            <option value="0">📱 995 149 635</option>
+            <option value="1">📱 956 764 364</option>
+          </select>
+          <span class="chip chipGold" id="numeroPretty">—</span>
+        </div>
+
+        <div class="heroActions">
+          <a class="btn btn-gold" id="waBtn" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <a class="btn" id="callBtn" href="#">📞 Llamar</a>
+          <a class="btn" href="#contacto">📝 Enviar consulta</a>
+        </div>
+
+        <div class="draMini">
+          <span class="tagGold">DRA.</span>
+          <span><b>Yudith Sandoval Espinoza</b></span>
+        </div>
+
+        <div class="trustRow">
+          <div class="trustPill">✅ Atención rápida</div>
+          <div class="trustPill">✅ Asesoría clara</div>
+          <div class="trustPill">✅ Confidencialidad</div>
+        </div>
+      </div>
+
+      <aside class="heroRight">
+        <div class="card cardGlow reveal">
+          <div class="cardHead">
+            <h3>Contacto rápido</h3>
+            <span class="spark" aria-hidden="true">✦</span>
+          </div>
+
+          <p class="muted">Selecciona el número y te abrimos WhatsApp con 1 clic.</p>
+
+          <div class="info muted">
+            💬 WhatsApp: <span id="waTxt"></span><br/>
+            📞 Teléfono: <span id="telTxt"></span><br/>
+            📍 Dirección: Jr. Bolognesi N°533 - Supe<br/>
+            ✉️ Correo: ejuridicojys@gmail.com
+          </div>
+
+          <div class="quickRow">
+            <a class="miniBtn" id="waMini" href="#" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="miniBtn" id="callMini" href="#">Llamar</a>
+          </div>
+        </div>
+
+        <div class="card casaCard reveal">
+          <div class="casaText">
+            <div class="casaTitle">Soporte en documentos y bienes</div>
+            <div class="muted">Asesoría relacionada a contratos, minutas y documentación.</div>
+            <div class="casaActions">
+              <button class="btn btn-gold small" type="button" data-service="Contratos y documentos">Consultar</button>
+              <a class="btn small" href="#servicios">Ver servicios</a>
+            </div>
+          </div>
+          <img class="casaImg" src="casa.png" alt="Imagen de casa" />
+        </div>
+      </aside>
+    </section>
+
+    <!-- DRA BANNER (estilo folleto) -->
+    <section class="draBanner reveal">
+      <div class="draBox">
+        <div class="draLeft">
+          <div class="draLabel">DRA.</div>
+          <div class="draName">YUDITH SANDOVAL ESPINOZA</div>
+          <div class="draRole">ABOGADA</div>
+
+          <div class="draList muted">
+            <div>📍 Jr. Bolognesi N°533 - Supe</div>
+            <div>✉️ ejuridicojys@gmail.com</div>
+            <div>📱 995 149 635 • 956 764 364</div>
+          </div>
+
+          <div class="draBtns">
+            <a class="btn btn-gold" href="#contacto">Agendar</a>
+            <a class="btn" id="draWhats" href="#" target="_blank" rel="noopener">Escribir</a>
+          </div>
+        </div>
+
+        <div class="draRight">
+          <div class="seal" title="J&S Estudio Jurídico">
+            <img src="logo.png" alt="Sello J&S" />
+            <div class="sealText">
+              <div class="sealTop">J&S</div>
+              <div class="sealBot">Estudio Jurídico</div>
+            </div>
+          </div>
+          <div class="goldLine"></div>
+          <div class="muted tiny">“Soluciones claras • Atención rápida”</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section reveal">
+      <div class="sectionTop">
+        <h2>Nuestros servicios</h2>
+        <p class="muted">Toca “Consultar” y se abre WhatsApp con el mensaje listo.</p>
+      </div>
+
+      <div class="services">
+        <div class="svc">
+          <div class="svcTop">
+            <div class="badge">🤝</div>
+            <button class="btn btn-gold" type="button" data-service="Conciliación">Consultar</button>
+          </div>
+          <h3>Conciliación</h3>
+          <p class="muted">Conciliación extrajudicial, acuerdos y asesoría.</p>
+        </div>
+
+        <div class="svc">
+          <div class="svcTop">
+            <div class="badge">💔</div>
+            <button class="btn btn-gold" type="button" data-service="Divorcios">Consultar</button>
+          </div>
+          <h3>Divorcios</h3>
+          <p class="muted">Orientación y trámite según el tipo de divorcio.</p>
+        </div>
+
+        <div class="svc">
+          <div class="svcTop">
+            <div class="badge">🍽️</div>
+            <button class="btn btn-gold" type="button" data-service="Procesos de alimentos">Consultar</button>
+          </div>
+          <h3>Procesos de alimentos</h3>
+          <p class="muted">Demanda, aumento, reducción y ejecución.</p>
+        </div>
+
+        <div class="svc">
+          <div class="svcTop">
+            <div class="badge">👨‍👩‍👧</div>
+            <button class="btn btn-gold" type="button" data-service="Tenencia">Consultar</button>
+          </div>
+          <h3>Tenencia</h3>
+          <p class="muted">Procesos y acuerdos priorizando el bienestar del menor.</p>
+        </div>
+
+        <div class="svc">
+          <div class="svcTop">
+            <div class="badge">🧾</div>
+            <button class="btn btn-gold" type="button" data-service="Rectificación de partida">Consultar</button>
+          </div>
+          <h3>Rectificación de partida</h3>
+          <p class="muted">Trámite y asesoría para correcciones registrales.</p>
+        </div>
+
+        <div class="svc">
+          <div class="svcTop">
+            <div class="badge">📄</div>
+            <button class="btn btn-gold" type="button" data-service="Elaboración de contratos / minutas">Consultar</button>
+          </div>
+          <h3>Contratos y minutas</h3>
+          <p class="muted">Redacción y revisión para firmar con seguridad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="two">
+      <div class="section noTop reveal">
+        <h2>Enviar consulta</h2>
+        <p class="muted">Formulario sin servidor: abre WhatsApp con tu consulta lista.</p>
+
+        <form id="form">
+          <div class="row2">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input id="nombre" required placeholder="Tu nombre" />
+            </div>
+            <div>
+              <label for="telefono">Tu WhatsApp</label>
+              <input id="telefono" required placeholder="Ej: +51 9XX XXX XXX" />
+            </div>
+          </div>
+
+          <label for="serv">Servicio</label>
+          <select id="serv" required>
+            <option value="" selected disabled>Selecciona un servicio</option>
+            <option>Conciliación</option>
+            <option>Divorcios</option>
+            <option>Procesos de alimentos</option>
+            <option>Tenencia</option>
+            <option>Rectificación de partida</option>
+            <option>Elaboración de contratos / minutas</option>
+            <option>Otro</option>
+          </select>
+
+          <label for="mensaje">Consulta</label>
+          <textarea id="mensaje" required placeholder="Cuéntame tu caso..."></textarea>
+
+          <div class="formActions">
+            <button class="btn btn-gold" type="submit">Enviar por WhatsApp</button>
+            <span class="muted" id="estado" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="section noTop reveal">
+        <h2>Contacto</h2>
+        <p class="muted">Teléfonos del folleto:</p>
+
+        <div class="muted info">
+          💬 Celular 1: <span id="c1"></span><br/>
+          💬 Celular 2: <span id="c2"></span><br/>
+          🔗 Facebook:
+          <a class="btn smallBtn" href="https://www.facebook.com/jys.agente.inmobiliario" target="_blank" rel="noopener">Ver página</a>
+        </div>
+
+        <h3 class="mapTitle">Ubicación</h3>
+        <p class="muted mapText">Jr. Bolognesi N°533 - Supe</p>
+
+        <iframe
+          class="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Jr.%20Bolognesi%20533%20Supe%20Peru&output=embed">
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón flotante WhatsApp -->
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+    💬 WhatsApp
+  </a>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" aria-live="polite" aria-atomic="true"></div>
+
+  <footer class="footer">
+    <div class="wrap footerRow">
+      <div>© <span id="year"></span> J&S Estudio Jurídico</div>
+      <div class="footerGold">Soluciones claras • Atención rápida</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
